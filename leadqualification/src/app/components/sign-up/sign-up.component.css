@@ -1,0 +1,14 @@
+.sign-up{
+    background-color: #6733E2;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 30vw;
+    height: 30vw;
+    background-color: #ffffff;
+    border-radius: 1em;
+}
