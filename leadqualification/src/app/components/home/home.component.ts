@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  slide:boolean = false;
+  slide = false;
 
   constructor(
     public router: Router
@@ -16,10 +16,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigate(){
+  navigate(): any {
     this.slide = true;
     setTimeout(() => {
-      this.router.navigate(['sign-up'])
+      this.router.navigate(['sign-up']);
     }, 1000);
   }
 }

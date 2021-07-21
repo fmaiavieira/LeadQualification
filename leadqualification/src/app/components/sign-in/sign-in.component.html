@@ -1,1 +1,12 @@
-<p>sign-in works!</p>
+<section class="sign-in">
+    <div class="box">
+        <span>Login</span>
+        <input type="email" placeholder="E-mail" #userEmail required>
+        <input type="password" placeholder="senha" #userName required>
+        <button class="register" (click)="authService.SignIn(userEmail.value, userName.value)">Entrar</button>
+        <div class="lines"><span></span><p>Ou</p><span></span></div>
+        <button class="google-button" (click)="authService.GoogleAuth()" ><img src="/assets/images/btn-google-signin.png" alt=""></button>
+        <button class="forgot" routerLink="/forgot-password">Esqueceu a senha?</button>
+    </div>
+    <p>Não tem uma conta? <button routerLink="/sign-up">Cadastre-se</button></p>
+</section>

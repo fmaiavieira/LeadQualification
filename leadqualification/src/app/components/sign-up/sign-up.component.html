@@ -1,10 +1,11 @@
 <section class="sign-up">
     <div class="box">
         <span>Cadastro</span>
-        <input type="email">
-        <input type="password">
-        <button>Cadatrar</button>
-        <div><span></span><p>Ou</p><span></span></div>
-        <button (click)="authService.GoogleAuth()" ><img src="" alt="">Cadastrar com Google</button>
+        <input type="email" placeholder="E-mail" #userEmail required>
+        <input type="password" placeholder="senha" #userName required>
+        <button class="register" (click)="authService.SignUp(userEmail.value, userName.value)">Cadastrar</button>
+        <div class="lines"><span></span><p>Ou</p><span></span></div>
+        <button class="google-button" (click)="authService.GoogleAuth()" ><img src="/assets/images/btn-google-signin.png" alt=""></button>
     </div>
+    <p>Já tem uma conta? <button routerLink="/sign-in">Entre</button></p>
 </section>
