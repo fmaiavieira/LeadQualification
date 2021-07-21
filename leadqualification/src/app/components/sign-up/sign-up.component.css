@@ -1,0 +1,84 @@
+.sign-up{
+    background-color: #6733E2;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 30vw;
+    height: 30vw;
+    background-color: #ffffff;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box>span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #6733E2;
+}
+.box>input{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fcfcfc;
+    width: 75%;
+    border: 2px solid #e7e7e7;
+    outline: none;
+    color: #444444;
+    font-size: 1em;
+    padding: 4% 2%;
+}
+.register{
+    background-color: #f8dd28;
+    color: #6733E2;
+    font-weight: 600;
+    font-size: 1.5em;
+    border: none;
+    border-radius: .3em;
+    letter-spacing: .1em;
+    padding: .5em 1em .5em 1em;
+    cursor: pointer;
+    width: 80%;
+}
+.register:hover{
+    background-color: #6733E2;
+    color: #ffffff;
+}
+.lines{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lines>span{
+    height: 1px;
+    width: 43%;
+    background-color: #e2e2e2;
+}
+.lines>p{
+    font-family: 'Montserrat', sans-serif;
+    color: #a0a0a0;
+}
+.google-button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+.sign-up>p{
+    margin: 1em 0em 0em 0em;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff99;
+}
+.sign-up>p>button{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.1em;
+}
