@@ -23,10 +23,10 @@ export class AuthService {
       if (user) {
         this.userData = user;
         localStorage.setItem('user', JSON.stringify(this.userData));
-        JSON.parse(localStorage.getItem('user') as string);
+        // JSON.parse(localStorage.getItem('user') as string);
       } else {
         localStorage.setItem('user', '');
-        JSON.parse(localStorage.getItem('user') as string);
+        // JSON.parse(localStorage.getItem('user') as string);
       }
     });
   }
@@ -86,8 +86,8 @@ export class AuthService {
 
   // Returns true when user is looged in and email is verified
   get isLoggedIn(): boolean {
-    const user = JSON.parse(localStorage.getItem('user') as string);
-    return (user !== null && user.emailVerified !== false) ? true : false;
+    const user = JSON.parse(JSON.stringify(localStorage.getItem('user')));
+    return (user !== null && user.emailVerified !== false && user !== '') ? true : false;
   }
 
   // Sign in with Google

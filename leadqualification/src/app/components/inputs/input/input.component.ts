@@ -7,9 +7,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class InputComponent implements OnInit {
   value: any = '';
-  @Input() public type: string = '';
-  @Input() public placeholder: string = '';
-  @Input() public name: string = '';
+  @Input() public type = '';
+  @Input() public placeholder = '';
+  @Input() public name = '';
 
   constructor() { }
 
