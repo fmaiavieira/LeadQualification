@@ -27,7 +27,7 @@
 .slide{
     animation: slider;
     border-right: 100vw solid #6631e1;
-    transition: 1s;
+    transition: .6s;
     position: relative;
     left: -100vw;
 }

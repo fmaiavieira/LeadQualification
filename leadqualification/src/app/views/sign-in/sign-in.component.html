@@ -1,0 +1,12 @@
+<section class="sign-in">
+    <div class="box">
+        <span>Login</span>
+        <app-input type="email" placeholder="E-mail" #userEmail required></app-input>
+        <app-input type="password" placeholder="senha" #userName required></app-input>
+        <app-primary-button name="Entrar" (click)="authService.SignIn(userEmail.value, userName.value)"></app-primary-button>
+        <div class="lines"><span></span><p>Ou</p><span></span></div>
+        <app-google-sign-in-button (click)="authService.GoogleAuth()" ><img src="/assets/images/btn-google-signin.png" alt=""></app-google-sign-in-button>
+        <button class="forgot" routerLink="/forgot-password">Esqueceu a senha?</button>
+    </div>
+    <p>Não tem uma conta? <button routerLink="/sign-up">Cadastre-se</button></p>
+</section>

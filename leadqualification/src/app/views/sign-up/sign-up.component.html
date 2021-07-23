@@ -1,0 +1,11 @@
+<section class="sign-up">
+    <div class="box">
+        <span>Cadastro</span>
+        <app-input type="email" placeholder="E-mail" #userEmail required></app-input>
+        <app-input type="password" placeholder="senha" #userName required></app-input>
+        <app-primary-button name="Cadastrar" (click)="authService.SignUp(userEmail.value, userName.value)"></app-primary-button>
+        <div class="lines"><span></span><p>Ou</p><span></span></div>
+        <app-google-sign-in-button (click)="authService.GoogleAuth()" ><img src="/assets/images/btn-google-signin.png" alt=""></app-google-sign-in-button>
+    </div>
+    <p>Já tem uma conta? <button routerLink="/sign-in">Entre</button></p>
+</section>

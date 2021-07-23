@@ -1,0 +1,10 @@
+input{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fcfcfc;
+    width: 95%;
+    border: 2px solid #e7e7e7;
+    outline: none;
+    color: #444444;
+    font-size: 1em;
+    padding: 4% 2%;
+}

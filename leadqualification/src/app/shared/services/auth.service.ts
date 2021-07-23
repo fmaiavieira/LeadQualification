@@ -54,14 +54,14 @@ export class AuthService {
         this.SetUserData(result.user);
       }).catch((error: any) => {
         // window.alert(error.message);
-        if(error.message === 'The email address is badly formatted.') {
-          window.alert('insira um email válido')
+        if (error.message === 'The email address is badly formatted.') {
+          window.alert('insira um email válido');
         }
-        if(error.message === 'The password must be 6 characters long or more.') {
-          window.alert('a senha deve ter 6 ou mais caracteres')
+        if (error.message === 'The password must be 6 characters long or more.') {
+          window.alert('a senha deve ter 6 ou mais caracteres');
         }
-        if(error.message === 'The email address is already in use by another account.') {
-          window.alert('Este email está associado a uma conta existente')
+        if (error.message === 'The email address is already in use by another account.') {
+          window.alert('Este email está associado a uma conta existente');
         }
       });
   }

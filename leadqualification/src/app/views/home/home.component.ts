@@ -20,6 +20,6 @@ export class HomeComponent implements OnInit {
     this.slide = true;
     setTimeout(() => {
       this.router.navigate(['sign-up']);
-    }, 1000);
+    }, 400);
   }
 }

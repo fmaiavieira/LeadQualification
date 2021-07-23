@@ -6,14 +6,18 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { SignInComponent } from './components/sign-in/sign-in.component';
-import { SignUpComponent } from './components/sign-up/sign-up.component';
-import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
-import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HomeComponent } from './views/home/home.component';
+import { SignInComponent } from './views/sign-in/sign-in.component';
+import { SignUpComponent } from './views/sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './views/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './views/verify-email/verify-email.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { AuthService } from './shared/services/auth.service';
 import { HeaderComponent } from './components/header/header.component';
+import { InputComponent } from './components/inputs/input/input.component';
+import { FormsModule } from '@angular/forms';
+import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
+import { GoogleSignInButtonComponent } from './components/buttons/google-sign-in-button/google-sign-in-button.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +28,18 @@ import { HeaderComponent } from './components/header/header.component';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    InputComponent,
+    PrimaryButtonComponent,
+    GoogleSignInButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

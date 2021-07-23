@@ -1,4 +1,4 @@
-.sign-up{
+.sign-in{
     background-color: #6733E2;
     height: 90vh;
     width: 100vw;
@@ -23,31 +23,11 @@
     font-size: 1.5em;
     color: #6733E2;
 }
-.box>input{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #fcfcfc;
-    width: 75%;
-    border: 2px solid #e7e7e7;
-    outline: none;
-    color: #444444;
-    font-size: 1em;
-    padding: 4% 2%;
-}
-.register{
-    background-color: #f8dd28;
-    color: #6733E2;
-    font-weight: 600;
-    font-size: 1.5em;
-    border: none;
-    border-radius: .3em;
-    letter-spacing: .1em;
-    padding: .5em 1em .5em 1em;
-    cursor: pointer;
+.box>app-input{
     width: 80%;
 }
-.register:hover{
-    background-color: #6733E2;
-    color: #ffffff;
+app-primary-button{
+    width: 80%;
 }
 .lines{
     width: 80%;
@@ -64,17 +44,20 @@
     font-family: 'Montserrat', sans-serif;
     color: #a0a0a0;
 }
-.google-button{
+.forgot{
     background-color: transparent;
-    border:none;
+    text-decoration: underline;
+    color: #1a0dab;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
-.sign-up>p{
+.sign-in>p{
     margin: 1em 0em 0em 0em;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff99;
 }
-.sign-up>p>button{
+.sign-in>p>button{
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     background-color: transparent;
